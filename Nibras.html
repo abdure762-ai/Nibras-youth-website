@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nbras - Bori Muslim Students Union</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;600;700&family=Cairo:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Nibras.jpg" alt="Nibras Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="brand-title">NIBRAS</span>
+                    <span class="brand-sub">Bori Muslim Students Union</span>
+                </div>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+                <li><a href="#announcements" data-i18n="nav_announcements">Announcements</a></li>
+                <li><a href="#events" data-i18n="nav_events">Events</a></li>
+                <li><a href="#register" class="btn-register" data-i18n="nav_join">Join Us</a></li>
+            </ul>
+
+            <div class="header-controls">
+                <!-- Multi-Language Switcher Dropdown -->
+                <div class="lang-dropdown">
+                    <button id="langToggleBtn" class="lang-btn">
+                        <i class="fa-solid fa-globe"></i>
+                        <span id="currentLang">English</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="lang-menu" id="langMenu">
+                        <span onclick="setLanguage('en')">English</span>
+                        <span onclick="setLanguage('am')">አማርኛ</span>
+                        <span onclick="setLanguage('ar')">العربية</span>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="menuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="Nibras.jpg" alt="Nibras Emblem" class="hero-logo">
+            <h1 data-i18n="hero_title">Empowering Education, Faith & Unity</h1>
+            <p data-i18n="hero_desc">Welcome to Nibras — Bori Muslim Students Union. Guiding high school students towards academic excellence, moral integrity, and community empowerment.</p>
+            <div class="hero-buttons">
+                <a href="#register" class="btn btn-primary" data-i18n="btn_join_now">Join Nibras Today</a>
+                <a href="#about" class="btn btn-secondary" data-i18n="btn_learn_more">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="tag_who_we_are">Who We Are</span>
+                <h2 class="section-title" data-i18n="about_title">About Our Union</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon-wrapper">
+                        <i class="fa-solid fa-lightbulb icon-gold"></i>
+                    </div>
+                    <h3 data-i18n="card_mission_title">Our Mission</h3>
+                    <p data-i18n="card_mission_desc">To ignite the light of knowledge and ethical values in high school students, creating an inclusive and supportive educational network.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon-wrapper">
+                        <i class="fa-solid fa-graduation-cap icon-gold"></i>
+                    </div>
+                    <h3 data-i18n="card_academic_title">Academic Support</h3>
+                    <p data-i18n="card_academic_desc">Providing study sessions, mentorship, and educational guidance for high school subjects and exam preparation.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon-wrapper">
+                        <i class="fa-solid fa-handshake-angle icon-gold"></i>
+                    </div>
+                    <h3 data-i18n="card_community_title">Community & Unity</h3>
+                    <p data-i18n="card_community_desc">Building strong brotherhood and sisterhood bonds through cooperative social initiatives and cultural activities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcements Section -->
+    <section id="announcements" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="tag_updates">Updates</span>
+                <h2 class="section-title" data-i18n="announcements_title">Latest Announcements</h2>
+            </div>
+            <div class="announcement-list">
+                <div class="announcement-card">
+                    <div class="badge" data-i18n="badge_new">New</div>
+                    <h3 data-i18n="announcement1_title">Grade 11 & 12 Study Group Registration</h3>
+                    <p class="date"><i class="fa-regular fa-calendar"></i> October 20, 2026</p>
+                    <p data-i18n="announcement1_desc">Registration is now open for weekly peer tutoring sessions in Mathematics, Physics, and Chemistry.</p>
+                </div>
+                <div class="announcement-card">
+                    <h3 data-i18n="announcement2_title">Weekly Youth Mentorship Circle</h3>
+                    <p class="date"><i class="fa-regular fa-calendar"></i> October 25, 2026</p>
+                    <p data-i18n="announcement2_desc">Join us every Friday afternoon for open discussion, career counseling, and character building sessions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="tag_schedule">Schedule</span>
+                <h2 class="section-title" data-i18n="events_title">Upcoming Events</h2>
+            </div>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">28</span>
+                        <span class="month">OCT</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 data-i18n="event1_title">High School Academic Orientation</h3>
+                        <p class="event-location"><i class="fa-solid fa-location-dot"></i> Bori Secondary School Hall</p>
+                        <p data-i18n="event1_desc">Orientation session on effective study habits, time management, and exam strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Registration Section -->
+    <section id="register" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="tag_get_involved">Get Involved</span>
+                <h2 class="section-title" data-i18n="register_title">Member Registration</h2>
+            </div>
+            <form id="studentRegistrationForm" class="registration-form">
+                <div class="form-group">
+                    <label for="fullName" data-i18n="form_full_name">Full Name</label>
+                    <input type="text" id="fullName" required placeholder="Enter full name">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="grade" data-i18n="form_grade">Grade / Class</label>
+                        <select id="grade" required>
+                            <option value="" disabled selected data-i18n="select_grade">Select Grade</option>
+                            <option value="9">Grade 9</option>
+                            <option value="10">Grade 10</option>
+                            <option value="11">Grade 11</option>
+                            <option value="12">Grade 12</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" data-i18n="form_phone">Phone Number</label>
+                        <input type="tel" id="phone" required placeholder="+251 ...">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" data-i18n="form_email">Email Address</label>
+                    <input type="email" id="email" required placeholder="student@example.com">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" data-i18n="form_submit">Submit Application</button>
+                <div id="formStatus" class="form-status"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="Nibras.jpg" alt="Nbras Logo Small">
+                <p>Nibras — Bori Muslim Students Union</p>
+                <p class="am-text">የቦሪ ሙስሊም ተማሪዎች ህብረት</p>
+                <p class="ar-text">إتحاد الطلاب المسلمين في جامعة بوري</p>
+            </div>
+            <div class="social-links">
+                <a href="https://t.me/Nibras1121/1"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Nibras Student Union. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
